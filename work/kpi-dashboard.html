@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive KPI dashboard — J.P. Park</title>
+  <meta name="description" content="One board replaced four weekly decks — an executive KPI dashboard built in Power BI.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' fill='%23f1ebdf'/%3E%3Crect x='9' y='9' width='46' height='46' fill='none' stroke='%23211e19' stroke-width='2'/%3E%3Crect x='22' y='22' width='20' height='20' fill='%23a4562e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=10">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("jpp-theme"); } catch (e) {}
+      if (!t) {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-th", t);
+    })();
+  </script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="wrap">
+
+  <header class="site-head bound">
+    <a class="brand" href="../index.html">J.P.&nbsp;Park</a>
+    <nav class="site-nav">
+      <a class="nav-link" href="../index.html#about">About</a>
+      <a class="nav-link" href="../index.html#work">Selected Work</a>
+      <a class="nav-link" href="mailto:jppk.park@gmail.com">Contact&nbsp;&#8599;</a>
+      <button class="theme-toggle" id="themeToggle" type="button"
+              aria-label="Switch to dark theme" title="Switch to dark theme">&#9790;</button>
+    </nav>
+  </header>
+
+  <main id="main" class="bound">
+    <article>
+
+      <div class="cs-top">
+        <a class="cs-back" href="../index.html#work">&#8592;&nbsp; All work</a>
+        <span class="cs-counter num">01 / 04</span>
+      </div>
+
+      <header class="cs-head">
+        <span class="eyebrow">Executive KPI dashboard</span>
+        <h1 class="cs-title">One board replaced four weekly decks.</h1>
+        <p class="cs-lede">Leadership was reconciling four separate weekly decks, each with its own
+          definition of revenue. One board replaced them.</p>
+      </header>
+
+      <div class="facts4">
+        <div class="fact"><span class="fact-k">Role</span><span class="fact-v num">Sole analyst &amp; designer</span></div>
+        <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2025 &middot; 10 weeks</span></div>
+        <div class="fact"><span class="fact-k">Stack</span><span class="fact-v num">Power BI, SQL, DAX</span></div>
+        <div class="fact"><span class="fact-k">Outcome</span><span class="fact-v num">40+ stakeholders</span></div>
+      </div>
+
+      <div class="ph ph-hero">
+        <span class="chip">hero screenshot &mdash; 1600&times;900</span>
+      </div>
+
+      <section class="cs-row">
+        <h2 class="label num">01 &middot; Context</h2>
+        <p class="cs-para">Describe the situation you walked into: who needed the numbers, what they
+          were using instead, and why it wasn't working. Two or three sentences is plenty &mdash;
+          the reader is deciding whether this problem resembles theirs.</p>
+      </section>
+
+      <section class="cs-row">
+        <h2 class="label num">02 &middot; Approach</h2>
+        <div class="cs-body">
+          <p class="cs-para">Describe what you actually did &mdash; the model you built, the
+            decisions you made about grain and metric definitions, and what you deliberately left
+            out. Name the tradeoff you're proudest of.</p>
+          <figure class="figure">
+            <div class="ph ph-detail"><span class="chip">detail view</span></div>
+            <figcaption>Caption &mdash; say what the reader should notice here.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="cs-row">
+        <h2 class="label num">03 &middot; Results</h2>
+        <div class="cs-results">
+          <div class="stats">
+            <div class="stat"><span class="stat-n num">40+</span><span class="stat-k">stakeholders</span></div>
+            <div class="stat"><span class="stat-n num">3</span><span class="stat-k">departments</span></div>
+            <div class="stat"><span class="stat-n num">1</span><span class="stat-k">source of truth</span></div>
+          </div>
+          <figure class="figure">
+            <div class="ph ph-detail"><span class="chip">detail view</span></div>
+            <figcaption>Caption &mdash; a second angle, or the data model behind it.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <nav class="panel cs-nav">
+        <div class="panel-inner">
+          <a class="cs-step" href="query-library.html">
+            <span class="eyebrow">&#8592;&nbsp; Previous</span>
+            <span class="cs-step-title">Standardised query library</span>
+          </a>
+          <a class="cs-step cs-step-next" href="reporting-automation.html">
+            <span class="eyebrow">Next&nbsp; &#8594;</span>
+            <span class="cs-step-title">Reporting automation pipeline</span>
+          </a>
+        </div>
+      </nav>
+
+    </article>
+  </main>
+
+  <footer class="site-foot bound">
+    <span class="num">&copy; 2026 J.P. Park</span>
+    <span>Designed &amp; built by J.P. Park</span>
+  </footer>
+
+</div>
+
+<script src="../js/main.js?v=10"></script>
+</body>
+</html>
