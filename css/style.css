@@ -108,10 +108,12 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   border-bottom: 1px solid var(--hair);
 }
 /* Wordless home mark — the hero already carries the name, so repeating it in
-   the header was redundant. Sized and weighted like the tool glyphs. */
+   the header was redundant. Slightly larger than the 18px tool glyphs: a dot
+   grid reads lighter than a stroked shape at the same size. */
 .brand { display: inline-flex; }
-.brand svg { width: 18px; height: 18px; stroke-width: 1.75; }
-.brand-core { fill: var(--accent); stroke: none; }
+.brand svg { width: 20px; height: 20px; }
+.brand circle { fill: currentColor; }
+.brand .brand-core { fill: var(--accent); }   /* needs .brand to outrank the rule above */
 .site-nav { display: flex; align-items: center; gap: 20px; }
 .nav-link {
   font-size: 12px; letter-spacing: .06em; text-transform: uppercase;

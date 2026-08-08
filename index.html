@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=23">
+  <link rel="stylesheet" href="css/style.css?v=24">
   <!-- Runs before first paint so the stored theme never flashes. -->
   <script>
     (function () {
@@ -36,11 +36,12 @@
 
     <header class="site-head bound">
       <a class="brand" href="index.html" aria-label="Joon Park — home">
-        <!-- Square mark, matching the favicon. Outline uses currentColor so it
-             follows the theme and goes terracotta on hover. -->
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-          <rect x="2" y="2" width="20" height="20" />
-          <rect class="brand-core" x="9" y="9" width="6" height="6" />
+        <!-- 3x3 dot grid. Dots inherit the ink via currentColor so the mark
+             themes itself; the centre dot picks up the terracotta accent. -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="5" cy="5" r="2" /> <circle cx="12" cy="5" r="2" /> <circle cx="19" cy="5" r="2" />
+          <circle cx="5" cy="12" r="2" /> <circle class="brand-core" cx="12" cy="12" r="2" /> <circle cx="19" cy="12" r="2" />
+          <circle cx="5" cy="19" r="2" /> <circle cx="12" cy="19" r="2" /> <circle cx="19" cy="19" r="2" />
         </svg>
       </a>
       <nav class="site-nav">
@@ -295,7 +296,7 @@
 
   </div>
 
-  <script src="js/main.js?v=23"></script>
+  <script src="js/main.js?v=24"></script>
 </body>
 
 </html>
