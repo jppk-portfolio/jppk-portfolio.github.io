@@ -1,0 +1,10 @@
+# Local tooling / editor config
+.claude/
+
+# Working notes — not for publication
+TODO.md
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
