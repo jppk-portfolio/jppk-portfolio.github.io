@@ -107,7 +107,11 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   gap: 18px; padding: 20px 0;
   border-bottom: 1px solid var(--hair);
 }
-.brand { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+/* Wordless home mark — the hero already carries the name, so repeating it in
+   the header was redundant. Sized and weighted like the tool glyphs. */
+.brand { display: inline-flex; }
+.brand svg { width: 18px; height: 18px; stroke-width: 1.75; }
+.brand-core { fill: var(--accent); stroke: none; }
 .site-nav { display: flex; align-items: center; gap: 20px; }
 .nav-link {
   font-size: 12px; letter-spacing: .06em; text-transform: uppercase;

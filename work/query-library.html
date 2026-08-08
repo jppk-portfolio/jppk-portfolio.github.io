@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=22">
+  <link rel="stylesheet" href="../css/style.css?v=23">
   <script>
     (function () {
       var t = null;
@@ -29,7 +29,14 @@
 <div class="wrap">
 
   <header class="site-head bound">
-    <a class="brand" href="../index.html">Joon&nbsp;Park</a>
+    <a class="brand" href="../index.html" aria-label="Joon Park — home">
+      <!-- Square mark, matching the favicon. Outline uses currentColor so it
+           follows the theme and goes terracotta on hover. -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" />
+        <rect class="brand-core" x="9" y="9" width="6" height="6" />
+      </svg>
+    </a>
     <nav class="site-nav">
       <a class="nav-link" href="../index.html#about">About</a>
       <a class="nav-link" href="../index.html#work">Selected Work</a>
@@ -116,6 +123,6 @@
 
 </div>
 
-<script src="../js/main.js?v=22"></script>
+<script src="../js/main.js?v=23"></script>
 </body>
 </html>
