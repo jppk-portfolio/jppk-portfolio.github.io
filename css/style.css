@@ -147,9 +147,11 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   max-width: 17ch; text-wrap: balance;
 }
 
-/* Name and location read as one unit, so they sit tighter than the
-   hero-stack's 26px rhythm. */
-.hero-id  { display: flex; flex-direction: column; gap: 10px; }
+/* Name and location share a line, sitting on a common baseline. Wraps to two
+   lines on narrow screens, where they'd otherwise overflow. */
+.hero-id {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 18px;
+}
 .hero-loc { font-size: 13px; line-height: 1.5; letter-spacing: .01em; color: var(--muted); }
 
 .profile { display: flex; flex-direction: column; gap: 13px; }
@@ -298,11 +300,11 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   max-width: 1020px; margin: 0 auto;
   display: flex; flex-direction: column; gap: 26px;
 }
-.link-row {
-  display: flex; flex-wrap: wrap; gap: 22px;
-  align-items: baseline; padding-top: 6px;
+/* Label sits close to the button so the two read as one pair, rather than
+   inheriting the panel's looser 26px rhythm. */
+.contact-block {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
 }
-.link-cap { font-size: 12px; letter-spacing: .13em; text-transform: uppercase; }
 
 /* ---------- footer ---------- */
 
