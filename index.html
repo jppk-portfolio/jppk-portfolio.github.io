@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/style.css?v=22">
   <!-- Runs before first paint so the stored theme never flashes. -->
   <script>
     (function () {
@@ -111,10 +111,6 @@
                   </svg>Excel</span>
               </div>
             </div>
-          </div>
-
-          <div class="cta-row">
-            <a class="pill mail" href="#contact" data-u="jppk.park" data-d="gmail.com">Email me&nbsp;&#8599;</a>
           </div>
         </div>
       </section>
@@ -272,13 +268,14 @@
       </section>
 
       <!-- ============ CONTACT ============ -->
-      <section class="panel" id="contact">
+      <section class="panel panel-thin" id="contact">
         <div class="panel-inner">
           <!-- The address is never written out. js/main.js builds the mailto
                from the split data-u / data-d attributes when the page loads. -->
-          <div class="contact-block">
-            <h2 class="label">Contact</h2>
-            <a class="pill mail" href="#contact" data-u="jppk.park" data-d="gmail.com">Email me&nbsp;&#8599;</a>
+          <div class="contact-row">
+            <a class="contact-cta mail" href="#contact"
+               data-u="jppk.park" data-d="gmail.com">Contact&nbsp;&#8599;</a>
+            <span class="credit">Designed &amp; built by Joon Park</span>
           </div>
 
           <noscript>
@@ -289,13 +286,9 @@
 
     </main>
 
-    <footer class="site-foot bound">
-      <span>Designed &amp; built by Joon Park</span>
-    </footer>
-
   </div>
 
-  <script src="js/main.js?v=16"></script>
+  <script src="js/main.js?v=22"></script>
 </body>
 
 </html>

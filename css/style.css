@@ -1,5 +1,5 @@
 /* ============================================================
-   J.P. Park — portfolio
+   Joon Park — portfolio
    Editorial parchment. Hairlines only, no shadows.
    One breakpoint: 820px.
    ============================================================ */
@@ -18,7 +18,6 @@
   --hair-strong: rgba(33, 30, 25, .25);   /* theme toggle */
   --hair-tag:    rgba(33, 30, 25, .22);   /* tag pills */
   --hair-dash:   rgba(33, 30, 25, .28);   /* image placeholders */
-  --hair-icon:   rgba(33, 30, 25, .35);   /* tool slots, CTA pills */
 
   --ph-fill:     rgba(33, 30, 25, .07);   /* placeholder hatching */
   --chip-bg:     #f1ebdf;                 /* label chip sitting on the hatching */
@@ -42,7 +41,6 @@ html[data-th="dark"] {
   --hair-strong: rgba(236, 229, 214, .28);
   --hair-tag:    rgba(236, 229, 214, .22);
   --hair-dash:   rgba(236, 229, 214, .26);
-  --hair-icon:   rgba(236, 229, 214, .30);
 
   --ph-fill:     rgba(236, 229, 214, .09);
   --chip-bg:     #16140f;
@@ -64,7 +62,6 @@ html[data-th="dark"] {
     --hair-strong: rgba(236, 229, 214, .28);
     --hair-tag:    rgba(236, 229, 214, .22);
     --hair-dash:   rgba(236, 229, 214, .26);
-    --hair-icon:   rgba(236, 229, 214, .30);
     --ph-fill:     rgba(236, 229, 214, .09);
     --chip-bg:     #16140f;
     color-scheme: dark;
@@ -184,13 +181,6 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   stroke-width: 1.75;
 }
 
-.cta-row { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px; }
-.pill {
-  border: 1px solid var(--hair-icon); border-radius: 22px;
-  padding: 10px 20px; font-size: 14px;
-}
-.pill:hover { border-color: var(--accent); }
-
 /* ---------- experience ---------- */
 
 .about {
@@ -300,17 +290,23 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   max-width: 1020px; margin: 0 auto;
   display: flex; flex-direction: column; gap: 26px;
 }
-/* Label sits close to the button so the two read as one pair, rather than
-   inheriting the panel's looser 26px rhythm. */
-.contact-block {
-  display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+/* A slim closing band that ends the page: contact link left, credit right.
+   The full 52px panel padding was built for a headline and three columns. */
+.panel-thin { padding-top: 22px; padding-bottom: 22px; }
+.contact-row {
+  display: flex; flex-wrap: wrap; justify-content: space-between;
+  align-items: baseline; gap: 8px 26px;
 }
+.credit { font-size: 11.5px; letter-spacing: .06em; color: var(--muted); }
+.contact-cta { font-size: 12px; letter-spacing: .13em; text-transform: uppercase; }
 
 /* ---------- footer ---------- */
 
+/* Only the credit line remains, so send it to the right edge — space-between
+   would just pin it left. */
 .site-foot {
   padding: 24px 0 40px;
-  display: flex; justify-content: space-between; align-items: baseline; gap: 20px;
+  display: flex; justify-content: flex-end; align-items: baseline; gap: 20px;
 }
 .site-foot span { font-size: 11.5px; letter-spacing: .06em; color: var(--muted); }
 
