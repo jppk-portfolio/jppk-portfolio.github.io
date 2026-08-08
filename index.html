@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/style.css?v=14">
   <!-- Runs before first paint so the stored theme never flashes. -->
   <script>
     (function () {
@@ -274,49 +274,28 @@
       <!-- ============ CONTACT ============ -->
       <section class="panel" id="contact">
         <div class="panel-inner">
-          <div class="panel-head">
-            <h2 class="label">Say hello</h2>
-            <p class="panel-title">Got numbers nobody agrees on?</p>
-          </div>
-
-          <div class="triple">
-            <div class="tri">
-              <span class="eyebrow">Contact me for</span>
-              <span class="tri-v">Full-time analyst roles, freelance dashboards, or a second
-                opinion on a model.</span>
-            </div>
-            <div class="tri">
-              <span class="eyebrow">Where</span>
-              <span class="tri-v">Toronto, ON, Canada</span>
-            </div>
-            <div class="tri">
-              <span class="eyebrow">Reply time</span>
-              <span class="tri-v num">Usually inside 48 hours.</span>
-            </div>
-          </div>
-
-          <!-- The address is assembled by js/main.js so it never appears in the
-               page source. Without JS this stays readable as the (at)/(dot) form. -->
-          <a class="mail-display mail" href="#contact"
-             data-u="jppk.park" data-d="gmail.com" data-show>jppk.park (at) gmail (dot) com</a>
-
+          <!-- The address is never written out. js/main.js builds the mailto
+               from the split data-u / data-d attributes when the page loads. -->
           <div class="link-row">
-            <a class="link-cap mail" href="#contact" data-u="jppk.park" data-d="gmail.com">Email</a>
+            <a class="pill mail" href="#contact" data-u="jppk.park" data-d="gmail.com">Email me&nbsp;&#8599;</a>
             <a class="link-cap" href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
           </div>
+
+          <noscript>
+            <p class="para">Email me at jppk.park (at) gmail (dot) com</p>
+          </noscript>
         </div>
       </section>
 
     </main>
 
     <footer class="site-foot bound">
-      <span class="num">&copy; 2026 Joon Park</span>
       <span>Designed &amp; built by Joon Park</span>
     </footer>
 
   </div>
 
-  <script src="js/main.js?v=13"></script>
+  <script src="js/main.js?v=14"></script>
 </body>
 
 </html>

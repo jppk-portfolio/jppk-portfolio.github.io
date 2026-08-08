@@ -44,15 +44,14 @@
    security: anything that executes JavaScript still sees the address.
 
    Links carry an #contact fallback href, so with JS disabled they go to the
-   contact panel, where the address stays readable in its (at)/(dot) form.
+   contact panel, where a <noscript> block spells the address out in an
+   (at)/(dot) form that a human can read but a naive scraper won't match.
    ------------------------------------------------------------ */
 
 (() => {
   "use strict";
 
   document.querySelectorAll("a.mail[data-u][data-d]").forEach((a) => {
-    const address = a.dataset.u + "@" + a.dataset.d;
-    a.href = "mailto:" + address;
-    if (a.hasAttribute("data-show")) a.textContent = address;
+    a.href = "mailto:" + a.dataset.u + "@" + a.dataset.d;
   });
 })();
