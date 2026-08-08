@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J.P. Park — Data analyst</title>
-  <meta name="description" content="Portfolio of J.P. Park — dashboards, reporting automation and analytics work.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' fill='%23f1ebdf'/%3E%3Crect x='9' y='9' width='46' height='46' fill='none' stroke='%23211e19' stroke-width='2'/%3E%3Crect x='22' y='22' width='20' height='20' fill='%23a4562e'/%3E%3C/svg%3E">
+  <title>Joon Park</title>
+  <meta name="description" content="Joon Park — Portfolio, analytics work.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' fill='%23f1ebdf'/%3E%3Crect x='9' y='9' width='46' height='46' fill='none' stroke='%23211e19' stroke-width='2'/%3E%3Crect x='22' y='22' width='20' height='20' fill='%23a4562e'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=10">
   <!-- Runs before first paint so the stored theme never flashes. -->
   <script>
     (function () {
       var t = null;
-      try { t = localStorage.getItem("jpp-theme"); } catch (e) {}
+      try { t = localStorage.getItem("jpp-theme"); } catch (e) { }
       if (!t) {
         t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark" : "light";
@@ -23,281 +27,291 @@
     })();
   </script>
 </head>
+
 <body>
 
-<a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-<div class="wrap">
+  <div class="wrap">
 
-  <header class="site-head bound">
-    <a class="brand" href="index.html">J.P.&nbsp;Park</a>
-    <nav class="site-nav">
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#work">Selected Work</a>
-      <a class="nav-link" href="mailto:jppk.park@gmail.com">Contact&nbsp;&#8599;</a>
-      <button class="theme-toggle" id="themeToggle" type="button"
-              aria-label="Switch to dark theme" title="Switch to dark theme">&#9790;</button>
-    </nav>
-  </header>
+    <header class="site-head bound">
+      <a class="brand" href="index.html">Joon&nbsp;Park</a>
+      <nav class="site-nav">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#work">Selected Work</a>
+        <a class="nav-link" href="mailto:jppk.park@gmail.com">Contact&nbsp;&#8599;</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme"
+          title="Switch to dark theme">&#9790;</button>
+      </nav>
+    </header>
 
-  <main id="main" class="bound">
+    <main id="main" class="bound">
 
-    <!-- ============ HERO ============ -->
-    <section class="hero">
-      <div class="hero-stack">
-        <h1 class="hero-name">J.P.&nbsp;Park</h1>
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-stack">
+          <h1 class="hero-name">Joon&nbsp;Park</h1>
 
-        <div class="profile">
-          <h2 class="label">Profile</h2>
-          <p class="statement">Bring me the dataset nobody trusts.</p>
-          <p class="para">My work spans the full pipeline &mdash; data modelling, automation, and
-            the final polished interface. I care most about the last mile: whether the person
-            looking at the dashboard can act on it.</p>
+          <div class="profile">
+            <h2 class="label">Profile</h2>
+            <p class="statement">Bring me the dataset nobody trusts.</p>
+            <p class="para">My work spans the full pipeline &mdash; data modelling, automation, and
+              the final polished interface. I care most about the last mile: whether the person
+              looking at the dashboard can act on it.</p>
 
-          <div class="meta-block">
-            <span class="eyebrow">Based in &middot; Tools</span>
-            <span class="meta-loc num">City, Country &middot; UTC+9</span>
-            <!-- Icons: Lucide (ISC). Each keeps stroke="currentColor" so it
+            <div class="meta-block">
+              <span class="eyebrow">Based in &middot; Tools</span>
+              <span class="meta-loc num">City, Country &middot; UTC+9</span>
+              <!-- Icons: Lucide (ISC). Each keeps stroke="currentColor" so it
                  renders in ink and follows the light/dark theme. -->
-            <div class="tools">
-              <span class="tool">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/>
-                  <path d="M13 17V5"/><path d="M8 17v-3"/>
-                </svg>Power BI</span>
+              <div class="tools">
+                <span class="tool">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                    <path d="M18 17V9" />
+                    <path d="M13 17V5" />
+                    <path d="M8 17v-3" />
+                  </svg>Power BI</span>
 
-              <span class="tool">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/>
-                  <circle cx="18.5" cy="5.5" r=".5" fill="currentColor"/>
-                  <circle cx="11.5" cy="11.5" r=".5" fill="currentColor"/>
-                  <circle cx="7.5" cy="16.5" r=".5" fill="currentColor"/>
-                  <circle cx="17.5" cy="14.5" r=".5" fill="currentColor"/>
-                  <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
-                </svg>Tableau</span>
+                <span class="tool">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+                    <circle cx="18.5" cy="5.5" r=".5" fill="currentColor" />
+                    <circle cx="11.5" cy="11.5" r=".5" fill="currentColor" />
+                    <circle cx="7.5" cy="16.5" r=".5" fill="currentColor" />
+                    <circle cx="17.5" cy="14.5" r=".5" fill="currentColor" />
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                  </svg>Tableau</span>
 
-              <span class="tool">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                  <path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>
-                </svg>SQL</span>
+                <span class="tool">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                    <path d="M3 12A9 3 0 0 0 21 12" />
+                  </svg>SQL</span>
 
-              <span class="tool">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M15 6a9 9 0 0 0-9 9V3"/>
-                  <circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
-                </svg>dbt</span>
+                <span class="tool">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 6a9 9 0 0 0-9 9V3" />
+                    <circle cx="18" cy="6" r="3" />
+                    <circle cx="6" cy="18" r="3" />
+                  </svg>dbt</span>
 
-              <span class="tool">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
-                </svg>Excel</span>
+                <span class="tool">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
+                  </svg>Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="pill" href="mailto:jppk.park@gmail.com">Email me&nbsp;&#8599;</a>
+            <a class="pill" href="#">R&eacute;sum&eacute;&nbsp;&#8595;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT / EXPERIENCE ============ -->
+      <section class="about" id="about">
+        <div class="about-stack">
+          <h2 class="label">Experience</h2>
+
+          <div class="roles">
+            <div class="role">
+              <div class="role-head">
+                <h3 class="role-title">Data Analyst</h3>
+                <span class="role-dates num">2023 &mdash; Present</span>
+              </div>
+              <p class="role-org">Company Name &middot; City</p>
+              <ul class="role-list">
+                <li>Built an executive KPI dashboard adopted by 40+ stakeholders across three departments.</li>
+                <li>Automated weekly reporting pipelines, cutting manual preparation time by 80%.</li>
+              </ul>
+            </div>
+
+            <div class="role">
+              <div class="role-head">
+                <h3 class="role-title">Junior Analyst</h3>
+                <span class="role-dates num">2020 &mdash; 2023</span>
+              </div>
+              <p class="role-org">Company Name &middot; City</p>
+              <ul class="role-list">
+                <li>Maintained the team's core sales datasets and monthly performance reports.</li>
+                <li>Introduced templated SQL queries that standardised ad-hoc analysis requests.</li>
+              </ul>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="cta-row">
-          <a class="pill" href="mailto:jppk.park@gmail.com">Email me&nbsp;&#8599;</a>
-          <a class="pill" href="#">R&eacute;sum&eacute;&nbsp;&#8595;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT / EXPERIENCE ============ -->
-    <section class="about" id="about">
-      <div class="about-stack">
-        <h2 class="label">Experience</h2>
-
-        <div class="roles">
-          <div class="role">
-            <div class="role-head">
-              <h3 class="role-title">Data Analyst</h3>
-              <span class="role-dates num">2023 &mdash; Present</span>
-            </div>
-            <p class="role-org">Company Name &middot; City</p>
-            <ul class="role-list">
-              <li>Built an executive KPI dashboard adopted by 40+ stakeholders across three departments.</li>
-              <li>Automated weekly reporting pipelines, cutting manual preparation time by 80%.</li>
-            </ul>
-          </div>
-
-          <div class="role">
-            <div class="role-head">
-              <h3 class="role-title">Junior Analyst</h3>
-              <span class="role-dates num">2020 &mdash; 2023</span>
-            </div>
-            <p class="role-org">Company Name &middot; City</p>
-            <ul class="role-list">
-              <li>Maintained the team's core sales datasets and monthly performance reports.</li>
-              <li>Introduced templated SQL queries that standardised ad-hoc analysis requests.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SELECTED WORK ============ -->
-    <section class="work-sec" id="work">
-      <div class="sec-head">
-        <h2 class="label">Selected Work</h2>
-        <span class="sec-count num">04</span>
-      </div>
-
-      <a class="work" href="work/kpi-dashboard.html">
-        <div class="work-grid">
-          <div class="ph ph-shot">
-            <span class="chip">executive kpi dashboard &mdash; screenshot</span>
-          </div>
-          <div class="work-text">
-            <div class="work-head">
-              <span class="eyebrow">01 &middot; Executive KPI dashboard</span>
-              <span class="work-headline">One board replaced four weekly decks.</span>
-            </div>
-            <div class="facts3">
-              <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Sole analyst</span></div>
-              <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2025</span></div>
-              <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">Power BI &middot; SQL</span></div>
-            </div>
-            <div class="tags">
-              <span class="tag">Data modelling</span>
-              <span class="tag">KPI design</span>
-              <span class="tag">0 &rarr; 1</span>
-            </div>
-            <p class="work-blurb">Leadership was reconciling four separate weekly decks. One board
-              replaced them, with a single agreed definition per metric and a model built to
-              survive new questions.</p>
-            <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="work" href="work/reporting-automation.html">
-        <div class="work-grid">
-          <div class="ph ph-shot">
-            <span class="chip">reporting automation pipeline &mdash; screenshot</span>
-          </div>
-          <div class="work-text">
-            <div class="work-head">
-              <span class="eyebrow">02 &middot; Reporting automation pipeline</span>
-              <span class="work-headline">Monday's report builds itself.</span>
-            </div>
-            <div class="facts3">
-              <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Analyst</span></div>
-              <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2024</span></div>
-              <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">Python &middot; Airflow</span></div>
-            </div>
-            <div class="tags">
-              <span class="tag">Automation</span>
-              <span class="tag">Data quality</span>
-            </div>
-            <p class="work-blurb">Weekly reporting took most of a day to assemble by hand, with no
-              record of what had been corrected. The pipeline now delivers it before anyone logs in.</p>
-            <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="work" href="work/sales-performance.html">
-        <div class="work-grid">
-          <div class="ph ph-shot">
-            <span class="chip">sales performance model &mdash; screenshot</span>
-          </div>
-          <div class="work-text">
-            <div class="work-head">
-              <span class="eyebrow">03 &middot; Sales performance model</span>
-              <span class="work-headline">Add the one-line result here.</span>
-            </div>
-            <div class="facts3">
-              <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Add your role</span></div>
-              <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2024</span></div>
-              <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">Tableau &middot; SQL</span></div>
-            </div>
-            <div class="tags">
-              <span class="tag">Add a tag</span>
-              <span class="tag">Add a tag</span>
-            </div>
-            <p class="work-blurb">One or two sentences on the problem this solved &mdash; not the
-              tooling. Replace this copy.</p>
-            <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
-          </div>
-        </div>
-      </a>
-
-      <a class="work" href="work/query-library.html">
-        <div class="work-grid">
-          <div class="ph ph-shot">
-            <span class="chip">standardised query library &mdash; screenshot</span>
-          </div>
-          <div class="work-text">
-            <div class="work-head">
-              <span class="eyebrow">04 &middot; Standardised query library</span>
-              <span class="work-headline">Add the one-line result here.</span>
-            </div>
-            <div class="facts3">
-              <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Add your role</span></div>
-              <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2023</span></div>
-              <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">SQL &middot; Excel</span></div>
-            </div>
-            <div class="tags">
-              <span class="tag">Add a tag</span>
-              <span class="tag">Add a tag</span>
-            </div>
-            <p class="work-blurb">One or two sentences on the problem this solved &mdash; not the
-              tooling. Replace this copy.</p>
-            <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
-          </div>
-        </div>
-      </a>
-
-      <div class="work-end"></div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="panel">
-      <div class="panel-inner">
-        <div class="panel-head">
-          <h2 class="label">Say hello</h2>
-          <p class="panel-title">Got numbers nobody agrees on?</p>
+      <!-- ============ SELECTED WORK ============ -->
+      <section class="work-sec" id="work">
+        <div class="sec-head">
+          <h2 class="label">Selected Work</h2>
+          <span class="sec-count num">04</span>
         </div>
 
-        <div class="triple">
-          <div class="tri">
-            <span class="eyebrow">Contact me for</span>
-            <span class="tri-v">Full-time analyst roles, freelance dashboards, or a second
-              opinion on a model.</span>
+        <a class="work" href="work/kpi-dashboard.html">
+          <div class="work-grid">
+            <div class="ph ph-shot">
+              <span class="chip">executive kpi dashboard &mdash; screenshot</span>
+            </div>
+            <div class="work-text">
+              <div class="work-head">
+                <span class="eyebrow">01 &middot; Executive KPI dashboard</span>
+                <span class="work-headline">One board replaced four weekly decks.</span>
+              </div>
+              <div class="facts3">
+                <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Sole analyst</span></div>
+                <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2025</span></div>
+                <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">Power BI &middot; SQL</span>
+                </div>
+              </div>
+              <div class="tags">
+                <span class="tag">Data modelling</span>
+                <span class="tag">KPI design</span>
+                <span class="tag">0 &rarr; 1</span>
+              </div>
+              <p class="work-blurb">Leadership was reconciling four separate weekly decks. One board
+                replaced them, with a single agreed definition per metric and a model built to
+                survive new questions.</p>
+              <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
+            </div>
           </div>
-          <div class="tri">
-            <span class="eyebrow">Where</span>
-            <span class="tri-v num">City, Country &middot; UTC+9</span>
+        </a>
+
+        <a class="work" href="work/reporting-automation.html">
+          <div class="work-grid">
+            <div class="ph ph-shot">
+              <span class="chip">reporting automation pipeline &mdash; screenshot</span>
+            </div>
+            <div class="work-text">
+              <div class="work-head">
+                <span class="eyebrow">02 &middot; Reporting automation pipeline</span>
+                <span class="work-headline">Monday's report builds itself.</span>
+              </div>
+              <div class="facts3">
+                <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Analyst</span></div>
+                <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2024</span></div>
+                <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">Python &middot; Airflow</span>
+                </div>
+              </div>
+              <div class="tags">
+                <span class="tag">Automation</span>
+                <span class="tag">Data quality</span>
+              </div>
+              <p class="work-blurb">Weekly reporting took most of a day to assemble by hand, with no
+                record of what had been corrected. The pipeline now delivers it before anyone logs in.</p>
+              <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
+            </div>
           </div>
-          <div class="tri">
-            <span class="eyebrow">Reply time</span>
-            <span class="tri-v num">Usually inside 48 hours.</span>
+        </a>
+
+        <a class="work" href="work/sales-performance.html">
+          <div class="work-grid">
+            <div class="ph ph-shot">
+              <span class="chip">sales performance model &mdash; screenshot</span>
+            </div>
+            <div class="work-text">
+              <div class="work-head">
+                <span class="eyebrow">03 &middot; Sales performance model</span>
+                <span class="work-headline">Add the one-line result here.</span>
+              </div>
+              <div class="facts3">
+                <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Add your role</span></div>
+                <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2024</span></div>
+                <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">Tableau &middot; SQL</span>
+                </div>
+              </div>
+              <div class="tags">
+                <span class="tag">Add a tag</span>
+                <span class="tag">Add a tag</span>
+              </div>
+              <p class="work-blurb">One or two sentences on the problem this solved &mdash; not the
+                tooling. Replace this copy.</p>
+              <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work" href="work/query-library.html">
+          <div class="work-grid">
+            <div class="ph ph-shot">
+              <span class="chip">standardised query library &mdash; screenshot</span>
+            </div>
+            <div class="work-text">
+              <div class="work-head">
+                <span class="eyebrow">04 &middot; Standardised query library</span>
+                <span class="work-headline">Add the one-line result here.</span>
+              </div>
+              <div class="facts3">
+                <div class="fact"><span class="fact-k">Role</span><span class="fact-v">Add your role</span></div>
+                <div class="fact"><span class="fact-k">Year</span><span class="fact-v num">2023</span></div>
+                <div class="fact"><span class="fact-k">Stack</span><span class="fact-v">SQL &middot; Excel</span></div>
+              </div>
+              <div class="tags">
+                <span class="tag">Add a tag</span>
+                <span class="tag">Add a tag</span>
+              </div>
+              <p class="work-blurb">One or two sentences on the problem this solved &mdash; not the
+                tooling. Replace this copy.</p>
+              <span class="work-cta">Read case study&nbsp;<i class="arrow">&#8594;</i></span>
+            </div>
+          </div>
+        </a>
+
+        <div class="work-end"></div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="panel">
+        <div class="panel-inner">
+          <div class="panel-head">
+            <h2 class="label">Say hello</h2>
+            <p class="panel-title">Got numbers nobody agrees on?</p>
+          </div>
+
+          <div class="triple">
+            <div class="tri">
+              <span class="eyebrow">Contact me for</span>
+              <span class="tri-v">Full-time analyst roles, freelance dashboards, or a second
+                opinion on a model.</span>
+            </div>
+            <div class="tri">
+              <span class="eyebrow">Where</span>
+              <span class="tri-v num">City, Country &middot; UTC+9</span>
+            </div>
+            <div class="tri">
+              <span class="eyebrow">Reply time</span>
+              <span class="tri-v num">Usually inside 48 hours.</span>
+            </div>
+          </div>
+
+          <div class="link-row">
+            <a class="link-cap" href="mailto:jppk.park@gmail.com">Email</a>
+            <a class="link-cap" href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
+            <a class="link-cap" href="#">R&eacute;sum&eacute;</a>
           </div>
         </div>
+      </section>
 
-        <div class="link-row">
-          <a class="link-cap" href="mailto:jppk.park@gmail.com">Email</a>
-          <a class="link-cap" href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
-          <a class="link-cap" href="#">R&eacute;sum&eacute;</a>
-        </div>
-      </div>
-    </section>
+    </main>
 
-  </main>
+    <footer class="site-foot bound">
+      <span class="num">&copy; 2026 Joon Park</span>
+      <span>Designed &amp; built by Joon Park</span>
+    </footer>
 
-  <footer class="site-foot bound">
-    <span class="num">&copy; 2026 J.P. Park</span>
-    <span>Designed &amp; built by J.P. Park</span>
-  </footer>
+  </div>
 
-</div>
-
-<script src="js/main.js?v=10"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
+
 </html>
