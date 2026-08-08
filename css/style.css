@@ -147,6 +147,11 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   max-width: 17ch; text-wrap: balance;
 }
 
+/* Name and location read as one unit, so they sit tighter than the
+   hero-stack's 26px rhythm. */
+.hero-id  { display: flex; flex-direction: column; gap: 10px; }
+.hero-loc { font-size: 13px; line-height: 1.5; letter-spacing: .01em; color: var(--muted); }
+
 .profile { display: flex; flex-direction: column; gap: 13px; }
 .statement {
   font-family: var(--display); font-size: 24px; font-weight: 400;
@@ -163,7 +168,6 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   padding-top: 20px; margin-top: 5px;
   border-top: 1px solid var(--hair);
 }
-.meta-loc { font-size: 15px; line-height: 1.6; }
 .tools { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 4px; }
 .tool {
   display: inline-flex; align-items: center; gap: 8px;
@@ -305,6 +309,11 @@ h1, h2, h3, p, ul, figure { margin: 0; }
 }
 .tri { display: flex; flex-direction: column; gap: 6px; }
 .tri-v { font-size: 14.5px; line-height: 1.55; }
+.mail-display {
+  align-self: start;
+  font-family: var(--display); font-size: 20px; line-height: 1.3;
+  letter-spacing: -.01em; word-break: break-word;
+}
 .link-row {
   display: flex; flex-wrap: wrap; gap: 22px;
   align-items: baseline; padding-top: 6px;
@@ -391,6 +400,11 @@ h1, h2, h3, p, ul, figure { margin: 0; }
   .hero-name,
   .cs-title      { font-size: 31px; }
   .panel-title   { font-size: 27px; }
+
+  /* The four nav items plus the brand are wider than a phone viewport, so let
+     the bar wrap to a second row instead of forcing the page to scroll. */
+  .site-head     { flex-wrap: wrap; gap: 12px 18px; }
+  .site-nav      { flex-wrap: wrap; gap: 16px; }
 
   .work-grid     { grid-template-columns: 1fr; gap: 22px; }
   .ph-shot       { order: -1; }

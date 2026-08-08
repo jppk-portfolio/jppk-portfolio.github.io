@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="css/style.css?v=13">
   <!-- Runs before first paint so the stored theme never flashes. -->
   <script>
     (function () {
@@ -39,7 +39,7 @@
       <nav class="site-nav">
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#work">Selected Work</a>
-        <a class="nav-link" href="mailto:jppk.park@gmail.com">Contact&nbsp;&#8599;</a>
+        <a class="nav-link mail" href="#contact" data-u="jppk.park" data-d="gmail.com">Contact&nbsp;&#8599;</a>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme"
           title="Switch to dark theme">&#9790;</button>
       </nav>
@@ -50,7 +50,10 @@
       <!-- ============ HERO ============ -->
       <section class="hero">
         <div class="hero-stack">
-          <h1 class="hero-name">Joon&nbsp;Park</h1>
+          <div class="hero-id">
+            <h1 class="hero-name">Joon&nbsp;Park</h1>
+            <p class="hero-loc">Based in Toronto, ON, Canada</p>
+          </div>
 
           <div class="profile">
             <h2 class="label">Profile</h2>
@@ -60,8 +63,7 @@
               looking at the dashboard can act on it.</p>
 
             <div class="meta-block">
-              <span class="eyebrow">Based in &middot; Tools</span>
-              <span class="meta-loc num">City, Country &middot; UTC+9</span>
+              <span class="eyebrow">Tools</span>
               <!-- Icons: Lucide (ISC). Each keeps stroke="currentColor" so it
                  renders in ink and follows the light/dark theme. -->
               <div class="tools">
@@ -112,7 +114,7 @@
           </div>
 
           <div class="cta-row">
-            <a class="pill" href="mailto:jppk.park@gmail.com">Email me&nbsp;&#8599;</a>
+            <a class="pill mail" href="#contact" data-u="jppk.park" data-d="gmail.com">Email me&nbsp;&#8599;</a>
             <a class="pill" href="#">R&eacute;sum&eacute;&nbsp;&#8595;</a>
           </div>
         </div>
@@ -271,7 +273,7 @@
       </section>
 
       <!-- ============ CONTACT ============ -->
-      <section class="panel">
+      <section class="panel" id="contact">
         <div class="panel-inner">
           <div class="panel-head">
             <h2 class="label">Say hello</h2>
@@ -286,7 +288,7 @@
             </div>
             <div class="tri">
               <span class="eyebrow">Where</span>
-              <span class="tri-v num">City, Country &middot; UTC+9</span>
+              <span class="tri-v">Toronto, ON, Canada</span>
             </div>
             <div class="tri">
               <span class="eyebrow">Reply time</span>
@@ -294,8 +296,13 @@
             </div>
           </div>
 
+          <!-- The address is assembled by js/main.js so it never appears in the
+               page source. Without JS this stays readable as the (at)/(dot) form. -->
+          <a class="mail-display mail" href="#contact"
+             data-u="jppk.park" data-d="gmail.com" data-show>jppk.park (at) gmail (dot) com</a>
+
           <div class="link-row">
-            <a class="link-cap" href="mailto:jppk.park@gmail.com">Email</a>
+            <a class="link-cap mail" href="#contact" data-u="jppk.park" data-d="gmail.com">Email</a>
             <a class="link-cap" href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
             <a class="link-cap" href="#">R&eacute;sum&eacute;</a>
           </div>
@@ -311,7 +318,7 @@
 
   </div>
 
-  <script src="js/main.js?v=10"></script>
+  <script src="js/main.js?v=13"></script>
 </body>
 
 </html>
